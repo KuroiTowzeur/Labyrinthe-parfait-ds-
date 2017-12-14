@@ -5,7 +5,7 @@ from pprint import pprint
 initLaby = lambda n, b: [[b for c in range(n)] for l in range(n)]
 
 
-def labyrinthe(n):
+def labyrinthe(n, dst=None):
     atteint = initLaby(n, False)
 
     p = Pile()
@@ -29,6 +29,12 @@ def labyrinthe(n):
             p.empile(s)
 
             atteint = visiter(s, atteint)
+
+            if not (dst is None) and s == dst:
+                path = p._content[:]
+
+    if not (dst is None):
+        return laby, path
 
     return laby
 
@@ -65,10 +71,11 @@ def voisins(c, grille):
 
 # 5
 def choisir(voisins):
+
     return random.choice(voisins)
 
 
 if __name__ == '__main__':
     laby = labyrinthe(10)
-    
+
     print(laby._content)

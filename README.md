@@ -1,6 +1,6 @@
 # Labyrinthe-parfait-ds-
 
-<img src="https://raw.githubusercontent.com/louisabraham/geopt/master/random_tree.png"
+<img src="https://raw.githubusercontent.com/KuroiTowzeur/Labyrinthe-parfait-ds-/master/screen.png"
 alt="random tree" width="70%"/>
 
 generateur de laby parfait

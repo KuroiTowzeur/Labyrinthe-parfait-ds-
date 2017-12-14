@@ -1,3 +1,5 @@
 # Labyrinthe-parfait-ds-
 
-![alt text](http://prntscr.com/hlri9p)
+generateur de laby parfait
+
+avec creation fichier png du laby
